@@ -1,7 +1,156 @@
-h1 {
-  color: #fff;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&family=Roboto:wght@400;700&family=Young+Serif&display=swap");
+/* GENERAL */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Young Serif", serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* LEFT THINGS */
+.left-section {
+  flex: 1;
+  background-image: url("./images/intilaq-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Reem Kufi", sans-serif;
+}
+.logo {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30%;
+  font-size: 5rem;
+}
+/* RIGHT THINGS */
+.right-section {
+  flex: 2;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.upper-text {
+  width: 100%;
+  padding: 0 4rem;
+  font-weight: semi-bold;
+  flex: 1.7;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.upper-text p {
+  font-size: 1.4rem;
+}
+.upper-text p:first-child {
+  margin-bottom: 0.2rem;
+}
+.upper-text p:last-child {
+  margin-bottom: 4rem;
+}
+
+.lower-section {
+  flex: 1;
+  width: 100%;
+  padding: 2rem 4rem;
+}
+
+/* Form */
+form {
+  background-color: #fff;
+  width: 100%;
+  flex: 1;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+form .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form fieldset {
+  width: 80%;
+
+  margin: 0;
+  border: none;
+  padding-left: 4rem;
+  margin-bottom: 1rem;
+}
+
+fieldset legend {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.form-input {
+  flex-basis: 50%;
+}
+
+.form-input label {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.7rem;
+}
+.form-input input {
+  width: 70%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e5e7eb;
+}
+.form-input input:focus {
+  outline: none;
+  border: 1px solid #ac8370;
+  box-shadow: 0 0 3px #ac8370;
+}
+
+.form-input input[type="password"]:invalid {
+  border: 1px solid red;
+}
+
+button {
+  color: white;
+  background-color: #ac8370;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #8c6b4a;
+
+  transform: scale(1.1);
+}
+
+a {
+  color: #ac8370;
+  text-decoration: none;
+  font-weight: 500;
 }
